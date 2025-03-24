@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>NGO Dashboard</h2>
+
+        <!-- Section to display reported cases -->
+        <h3>Reported Cases</h3>
+        <div id="reportsContainer">
+            <p>Loading reports...</p>
+        </div>
+
+        <!-- Section to upload success stories -->
+        <h3>Upload Success Stories</h3>
+        <form id="successForm">
+            <label for="successImage">Upload Image/Video:</label>
+            <input type="file" id="successImage" accept="image/*,video/*" required>
+
+            <label for="successDescription">Description:</label>
+            <textarea id="successDescription" rows="4" required></textarea>
+
+            <button type="submit">Upload</button>
+        </form>
+
+        <h3>Rescue Confirmations</h3>
+        <div id="confirmedRescues"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

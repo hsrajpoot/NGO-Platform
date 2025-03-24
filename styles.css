@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* for society dashboard  */
+
+
+.dashboard-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+
+/* NGO Dashboard styling */
+
+#reportsContainer, #confirmedRescues {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* feedback styling */
+
+.feedback-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.feedback-container textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* donation page styling */
+
+.donation-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.donation-container input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* to make responsive */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container, .feedback-container, .donation-container {
+        width: 90%;
+    }
+}

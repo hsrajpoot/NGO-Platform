@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Report Injured Animal</h2>
+        <form id="reportForm">
+            <label for="animalName">Animal Name:</label>
+            <input type="text" id="animalName" required>
+
+            <label for="injuryType">Injury Type:</label>
+            <input type="text" id="injuryType" required>
+
+            <label for="needs">What does the animal need?</label>
+            <input type="text" id="needs" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Click to select location" onclick="getLocation()" required>
+
+            <label for="imageUpload">Upload Image/Video:</label>
+            <input type="file" id="imageUpload" accept="image/*,video/*">
+
+            <label for="description">Description:</label>
+            <textarea id="description" rows="4" required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+
+        <div id="map"></div> <!-- Map for location selection -->
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>
